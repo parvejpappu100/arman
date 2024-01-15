@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;700;800&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* header section style */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 52px 127px;
+}
+
+nav>h3 {
+    margin-right: 350px;
+    color: #131318;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.title-color {
+    color: #FF5400;
+}
+
+.home {
+    color: #FF5400;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    gap: 44px;
+
+}
+
+nav li {
+    list-style: none;
+    /* color: #424247;
+    font-size: 18px;
+    font-weight: 400; */
+
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* banner section */
+.banner {
+    max-width: 1170px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.banner-content {
+    position: absolute;
+    /* justify-content: center; */
+    padding: 70px 287px 314px;
+    top: 0%;
+}
+
+.banner-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.banner-description {
+    color: #FFF;
+    text-align: center;
+    margin-top: 24px;
+}
