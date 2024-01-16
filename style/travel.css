@@ -5,12 +5,20 @@
     font-family: 'Mulish', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 /* header section style */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 52px 127px;
+}
+
+.bar {
+    display: none;
 }
 
 .adventure {
@@ -291,7 +299,8 @@ ul>li {
 
 
 footer {
-    max-width: 1440px;
+    /* max-width: 1440px;
+    margin: 0 auto; */
     background: rgba(19, 19, 24, 0.05);
     padding: 110px 60px;
 }
@@ -338,16 +347,335 @@ footer p {
 
 
 @media screen and (max-width:600px) {
-    div>img {
+
+
+    /* header section style */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0 8px;
+    }
+
+    .bar {
+        display: block;
+        font-size: 24px;
+    }
+
+    .adventure {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        color: #131318;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    .title-color {
+        color: #FF5400;
+    }
+
+    .home {
+        color: #FF5400;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    nav>ul {
+        display: none;
+
+
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li a {
+        text-decoration: none;
+        color: #424247;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    /* banner section */
+    .banner {
+        max-width: 1170px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+
+    }
+
+    .banner-content {
+        position: absolute;
+        padding: 0;
+        top: 0%;
+    }
+
+    .banner-title {
+        text-align: center;
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .banner-description {
+        color: #FFF;
+        text-align: center;
+        margin-top: 18px;
+    }
+
+    /* tour details section */
+    .tour {
+        max-width: 1170px;
+        padding: 0 8px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+    }
+
+    .title-primary {
+        color: #131318;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    ul>li {
+        margin-top: 16px;
+    }
+
+    .color-overall {
+        color: rgba(19, 19, 24, 0.70);
+    }
+
+    .different-color {
+        color: #5A5A5D;
+        margin-top: 18px;
+        margin-bottom: 32px;
+    }
+
+    .btn {
+        border-radius: 8px;
+        background: #FF5400;
+        border: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 14px 25px;
+    }
+
+    .tour-img {
         width: 100%;
     }
 
-    nav {
+    /* destination */
+    .destination {
+        text-align: center;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    .destination-title {
+        color: #131318;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .destination-description {
+        color: rgba(19, 19, 24, 0.70);
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+
+    .img-detail {
+        display: flex;
         flex-direction: column;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+
+    .place-img {
+        width: 100%;
+    }
+
+    .place {
+        position: relative;
+    }
+
+    .place-name {
+        position: absolute;
+        top: 35%;
+        right: 40%;
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    /* choose us section */
+    .choose-us {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 8px;
+    }
+
+    .our-serveices {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .hotel {
+        border-radius: 16px;
+        border: 1px solid rgba(251, 181, 99, 0.20);
+        background: rgba(251, 181, 99, 0.05);
+        padding: 24px;
+    }
+
+    .service {
+        border-radius: 16px;
+        border: 1px solid rgba(41, 206, 246, 0.20);
+        background: rgba(41, 206, 246, 0.05);
+        padding: 24px;
+    }
+
+    .best-price {
+        max-width: 573px;
+        margin: 24px auto;
+    }
+
+    .price {
+        border-radius: 16px;
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(233, 68, 68, 0.05);
+        padding: 24px;
+    }
+
+    /* input section style */
+    .input-section {
+        margin: 100px auto;
+        display: flex;
+        padding: 0 8px;
+        flex-direction: column;
+        gap: 24px;
 
     }
 
-    nav>h3 {
-        margin-right: 0;
+    .input-section-img {
+        width: 100%;
+    }
+
+    .newsletter {
+        max-width: 400px;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+        padding: 20px 20px;
+    }
+
+    .primary-hr {
+        background: rgba(19, 19, 24, 0.10);
+        margin-top: 24px;
+        margin-bottom: 24px;
+
+    }
+
+    .input-color {
+        width: 80%;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        border: none;
+        margin-top: 15px;
+        padding: 0 35px;
+
+    }
+
+    .subscribe {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 0px;
+
+    }
+
+    .discount-overflow {
+        position: relative;
+    }
+
+    .save-up {
+        border-radius: 16px;
+        background: #FF5400;
+        width: 220px;
+        padding: 5px;
+        position: absolute;
+        bottom: 18%;
+        right: 2%;
+        transform: rotate(-25deg);
+    }
+
+    .save-up h3 {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 800;
+        margin-top: 0px;
+        text-align: center;
+
+    }
+
+    .save-up p {
+        color: #FFF;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    footer {
+        background: rgba(19, 19, 24, 0.05);
+        padding: 80px 40px;
+    }
+
+    .footer-part {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    footer p {
+        text-align: center;
+        color: #5A5A5D;
+
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        color: #131318;
+        margin-bottom: 50px;
+    }
+
+    .hr-big {
+        display: none;
+    }
+
+    .hr-little {
+        margin: 50px 0px;
+        color: rgba(19, 19, 24, 0.10);
+    }
+
+    .copyrights {
+        text-align: center;
+        color: #131318;
+        font-family: Inter;
+        font-weight: 300;
     }
 }
